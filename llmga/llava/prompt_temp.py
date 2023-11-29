@@ -61,6 +61,10 @@ textextend_prompt=[
 "Can you paint a picture that conveys the chosen keywords?",
 "Please design an image.",
 "Visualize a scene inspired by the given keywords.",
+"Can you show me this image?",
+"What does it look like?",
+"Can I see like this.",
+"Can you design this image?"
 ]
 
 textextend_prompt2=[
