@@ -13,8 +13,8 @@
 <a href="https://llmga.github.io/"><img src="https://img.shields.io/badge/Project-Page-Green"></a>
 <a href='https://llmga.github.io/'><img src='https://img.shields.io/badge/Project-Demo-violet'></a>
 <a href="https://arxiv.org/pdf/2311.16500.pdf"><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> 
-<a href='https://llmga.github.io/'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue'></a>
-<a href='https://llmga.github.io/'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Data-green'></a>
+<a href='https://huggingface.co/binxia'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue'></a>
+<a href='https://huggingface.co/binxia'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Data-green'></a>
 
 ## News
 - [x] [2023.11.29]  We will upload all models, code, and data within a week and further refine this project.
