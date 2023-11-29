@@ -1,7 +1,7 @@
 
 
 
-<p align="center" width="50%">
+<p align="center" width="10%">
 <img src="imgs/logo.png" style="width: 4.2%" align=center> 
 </p>
 
