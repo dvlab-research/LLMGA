@@ -1,6 +1,6 @@
-<p align="center" width="100%">
-<img src="imgs/logo.png"alt="LLMGA"  style="width: 100%; min-width: 300px; display: block; margin: auto;">
-</p>
+
+
+# <img src="imgs/logo.png" style="width: 4.2%" align=center> 
 
 
 
