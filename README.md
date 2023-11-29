@@ -1,7 +1,9 @@
 
 
-# <img src="imgs/logo.png" style="width: 4.2%" align=center> 
 
+<p align="center" width="100%">
+<img src="imgs/logo.png" style="width: 4.2%" align=center> 
+</p>
 
 
 # LLMGA: Multimodal Large Language Model based Generation Assistant
