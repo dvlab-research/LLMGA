@@ -1,6 +1,8 @@
 <p align="center" width="100%">
-<img src="imgs/logo.png.png" alt="LLMGA"  style="width: 100%; min-width: 300px; display: block; margin: auto;">
+<img src="imgs/logo.png"alt="LLMGA"  style="width: 100%; min-width: 300px; display: block; margin: auto;">
 </p>
+
+
 
 # LLMGA: Multimodal Large Language Model based Generation Assistant
 
