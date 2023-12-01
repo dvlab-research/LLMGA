@@ -36,6 +36,13 @@
 - [Acknowledgement](#acknowledgement)
 - [License](#license)
 
+## Demo
+We provide some selected examples in this section. More examples can be found in our [project page](https://llmga.github.io/). Feel free to try our online [demo](https://llmga.github.io/)!
+
+<div align=center>
+<img width="100%" src="demos/demo.png"/>
+</div>
+
 ## Citation
 If you find this repo useful for your research, please consider citing the paper
 ```
