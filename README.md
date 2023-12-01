@@ -23,4 +23,35 @@
 - [x] [2023.11.29]  We will upload all models, code, and data within a week and further refine this project.
 - [x] [2023.11.28]   🔥 GitHub repo is created.
 
+## Contents
+- [Demo](#demo)
+- [Install](#install)
+- [Model](#model)
+- [Preparation](#preparation)
+- [Train](#train)
+- [Evaluation](#evaluation)
+- [Examples](#examples)
+- [TODO](#todo)
+- [Citation](#citation)
+- [Acknowledgement](#acknowledgement)
+- [License](#license)
+
+## Citation
+If you find this repo useful for your research, please consider citing the paper
+```
+@article{xia2023llmga,
+  title={LLMGA: Multimodal Large Language Model based Generation Assistant},
+  author={Xia, Bin and Wang, Shiyin, and Tao, Yingfan and Wang, Yitong and Jia, Jiaya},
+  journal={arXiv preprint arXiv:2311.16500},
+  year={2023}
+}
+```
+
+## Acknowledgement
+We would like to thank the following repos for their great work:
+
+- This work utilizes MLLM from [LLaVA](https://github.com/haotian-liu/LLaVA).
+- This work utilizes Stable Diffusion from [diffusers](https://github.com/huggingface/diffusers).
+
+
 
