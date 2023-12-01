@@ -40,7 +40,11 @@
 We provide some selected examples in this section. More examples can be found in our [project page](https://llmga.github.io/). Feel free to try our online [demo](https://llmga.github.io/)!
 
 <div align=center>
-<img width="100%" src="demos/demo.png"/>
+<img width="100%" src="imgs/github_poster1.png"/>
+</div>
+
+<div align=center>
+<img width="100%" src="imgs/github_poster2.png"/>
 </div>
 
 ## Citation
