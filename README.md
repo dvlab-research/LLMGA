@@ -61,10 +61,14 @@ conda activate llmga
 cd 
 pip install --upgrade pip  # enable PEP 660 support
 pip install -e .
+cd ./llmga/diffusers
+pip install . 
 ```
 
 3. Install additional packages for training cases
 ```bash
+pip install datasets
+pip install albumentations
 pip install ninja
 pip install flash-attn --no-build-isolation
 ```
