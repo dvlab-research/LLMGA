@@ -47,6 +47,35 @@ We provide some selected examples in this section. More examples can be found in
 <img width="100%" src="imgs/github_poster2.png"/>
 </div>
 
+## Install
+Please follow the instructions below to install the required packages.
+1. Clone this repository
+```bash
+git clone https://github.com/Zj-BinXia/LLMGA.git
+```
+
+2. Install Package
+```bash
+conda create -n llmga python=3.9 -y
+conda activate llmga
+cd 
+pip install --upgrade pip  # enable PEP 660 support
+pip install -e .
+```
+
+3. Install additional packages for training cases
+```bash
+pip install ninja
+pip install flash-attn --no-build-isolation
+```
+
+## Model
+
+
+<div align=center>
+<img width="100%" src="imgs/method.png"/>
+</div>
+
 ## Citation
 If you find this repo useful for your research, please consider citing the paper
 ```
