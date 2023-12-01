@@ -17,7 +17,7 @@
 <a href='https://huggingface.co/binxia'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Data-green'></a>
 
 ## News
-- [x] [2023.11.30]   🔥 We have released the code for DiffRIR. It can effectively eliminate differences in brightness, contrast, and texture between generated and preserved regions in inpainting and outpainting. Considering its applicability to projects beyond LLMGA, we have open-sourced it at [Github](https://github.com/Zj-BinXia/DiffRIR).
+- [x] [2023.11.30]   We have released the code for DiffRIR. It can effectively eliminate differences in brightness, contrast, and texture between generated and preserved regions in inpainting and outpainting. Considering its applicability to projects beyond LLMGA, we have open-sourced it at [Github](https://github.com/Zj-BinXia/DiffRIR).
 - [x] [2023.11.29]   🔥 The models is released at [Huggingface](https://huggingface.co/binxia).
 - [x] [2023.11.29]   🔥 The training and inference code is released.
 - [x] [2023.11.29]  We will upload all models, code, and data within a week and further refine this project.
