@@ -84,6 +84,8 @@ pip install flash-attn --no-build-isolation
 <img width="100%" src="imgs/method.png"/>
 </div>
 
+
+<div align=center>
 <table>
   <tr>
     <th align="left">Model</th>
@@ -114,6 +116,7 @@ pip install flash-attn --no-build-isolation
     <td align="center"><a href="https://huggingface.co/binxia/llmga-sdxl-inpainting">Download</a></td>
   </tr>
 </table>
+</div>
 
 ## Preparation
 
