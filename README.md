@@ -85,7 +85,6 @@ pip install flash-attn --no-build-isolation
 </div>
 
 
-<div align=center>
 <table>
   <tr>
     <th align="left">Model</th>
@@ -116,11 +115,30 @@ pip install flash-attn --no-build-isolation
     <td align="center"><a href="https://huggingface.co/binxia/llmga-sdxl-inpainting">Download</a></td>
   </tr>
 </table>
-</div>
+
 
 ## Preparation
 
+
+
 ## Train
+
+LLMGA is trained on 8 A100 GPUs with 80GB memory. To train on fewer GPUs, you can reduce the `per_device_train_batch_size` and increase the `gradient_accumulation_steps` accordingly. Always keep the global batch size the same: `per_device_train_batch_size` x `gradient_accumulation_steps` x `num_gpus`.
+
+Please make sure you download and organize the data following [Preparation](#preparation) before training.
+
+### First Stage Training
+
+train LLMGA based on LLaMA2-7b
+```bash
+bash train_LLMGA_7b_S1.sh
+```
+or train LLMGA based on LLaMA2-13b
+```bash
+bash train_LLMGA_13b_S1.sh
+```
+
+### Second Stage Training
 
 ## Inference
 
