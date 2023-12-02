@@ -140,6 +140,26 @@ bash train_LLMGA_13b_S1.sh
 
 ### Second Stage Training
 
+train LLMGA based on SD1.5-T2I
+```bash
+bash train_LLMGA_SD15_S2.sh
+```
+
+train LLMGA based on SD1.5-Inpainting
+```bash
+bash train_LLMGA_SD15_S2_inpaint.sh
+```
+
+train LLMGA based on SDXL-T2I
+```bash
+bash train_LLMGA_SDXL_S2.sh
+```
+
+train LLMGA based on SDXL-Inpainting
+```bash
+bash train_LLMGA_SDXL_S2_inpaint.sh
+```
+
 ## Inference
 
 ## TODO
