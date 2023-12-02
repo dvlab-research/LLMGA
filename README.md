@@ -186,8 +186,16 @@ python3 -m llmga.serve.cli-sdxl-inpainting \
     --mask-file /PATHtomask
 ```
 
+test LLMGA7b-SDXL for T2I generation without image input at first. You can ask LLMGA to assist in T2I generation by only chatting.
+```bash
+python3 -m llmga.serve.cli2-sdxl \
+    --model-path ./checkpoints/llmga-llama-2-7b-chat-full-finetune  \
+    --sdmodel_id ./checkpoints/llmga-sdxl-t2i \
+    --save_path ./exp2/llmga7b-sdxl \
+```
+
 ## TODO
-- [ ]
+- [ ] Support gradio demo.
 
 ## Citation
 If you find this repo useful for your research, please consider citing the paper
