@@ -84,6 +84,37 @@ pip install flash-attn --no-build-isolation
 <img width="100%" src="imgs/method.png"/>
 </div>
 
+<table>
+  <tr>
+    <th align="left">Model</th>
+    <th align="center">Pretrained Models</th>
+  </tr>
+  <tr>
+    <td align="left">LLMGA-MLLM7b</td>
+    <td align="center"><a href="https://huggingface.co/binxia/llmga-llama-2-7b-chat-full-finetune">Download</a></td>
+  </tr>
+  <tr>
+    <td align="left">LLMGA-MLLM13b</td>
+    <td align="center"><a href="https://huggingface.co/binxia/llmga-llama-2-13b-chat-full-finetune">Download</a></td>
+  </tr>
+  <tr>
+    <td align="left">LLMGA-SD15-T2I</td>
+    <td align="center"><a href="https://huggingface.co/binxia/llmga-sd15-t2i">Download</a></td>
+  </tr>
+  <tr>
+    <td align="left">LLMGA-SD15-Inpainting</td>
+    <td align="center"><a href="https://huggingface.co/binxia/llmga-sd15-inpainting">Download</a></td>
+  </tr>
+  <tr>
+    <td align="left">LLMGA-SDXL-T2I</td>
+    <td align="center"><a href="https://huggingface.co/binxia/llmga-sdxl-t2i">Download</a></td>
+  </tr>
+  <tr>
+    <td align="left">LLMGA-SDXL-Inpainting</td>
+    <td align="center"><a href="https://huggingface.co/binxia/llmga-sdxl-inpainting">Download</a></td>
+  </tr>
+</table>
+
 ## Preparation
 
 ## Train
