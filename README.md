@@ -162,6 +162,30 @@ bash train_LLMGA_SDXL_S2_inpaint.sh
 
 ## Inference
 
+### CLI Inference
+
+Use LLMGA without the need of Gradio interface. It also supports multiple GPUs, 4-bit and 8-bit quantized inference. With 4-bit quantization.
+Please try this for inference:
+
+test LLMGA7b-SDXL for T2I with image input at first. You can ask LLMGA to assist in T2I generation around your input image.
+```bash
+python3 -m llmga.serve.cli-sdxl \
+    --model-path ./checkpoints/llmga-llama-2-7b-chat-full-finetune  \
+    --sdmodel_id ./checkpoints/llmga-sdxl-t2i \
+    --save_path ./exp/llmga7b-sdxl \
+    --image-file /PATHtoIMG
+```
+
+test LLMGA7b-SDXL for Inpainting with image input at first. You can ask LLMGA to assist in inpainting or outpainting around your input image.
+```bash
+python3 -m llmga.serve.cli-sdxl-inpainting \
+    --model-path ./checkpoints/llmga-llama-2-7b-chat-full-finetune  \
+    --sdmodel_id ./checkpoints/llmga-sdxl-inpainting \
+    --save_path ./exp-inpainting/llmga7b-sdxl \
+    --image-file /PATHtoIMG \
+    --mask-file /PATHtomask
+```
+
 ## TODO
 - [ ]
 
