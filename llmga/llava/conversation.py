@@ -31,7 +31,7 @@ class Conversation:
         if len(messages) > 0 and type(messages[0][1]) is tuple:
             messages = self.messages.copy()
             init_role, init_msg = messages[0].copy()
-            if "<image>" in messages[0][1]:
+            if "<image>" in init_msg[0]:
                 has_image=True
             else:
                 has_image=False
