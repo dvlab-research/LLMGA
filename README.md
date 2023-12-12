@@ -56,14 +56,14 @@ We provide some selected examples in this section. More examples can be found in
 Please follow the instructions below to install the required packages.
 1. Clone this repository
 ```bash
-git clone https://github.com/Zj-BinXia/LLMGA.git
+git clone https://github.com/dvlab-research/LLMGA.git
 ```
 
 2. Install Package
 ```bash
 conda create -n llmga python=3.9 -y
 conda activate llmga
-cd 
+cd LLMGA
 pip install --upgrade pip  # enable PEP 660 support
 pip install -e .
 cd ./llmga/diffusers
