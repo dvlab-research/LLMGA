@@ -113,6 +113,7 @@ class Conversation:
     def append_message(self, role, message):
         self.messages.append([role, message])
 
+
     def get_images(self, return_pil=False):
         images = []
         for i, (role, msg) in enumerate(self.messages[self.offset:]):
@@ -139,7 +140,13 @@ class Conversation:
                     elif image_process_mode == "Crop":
                         pass
                     elif image_process_mode == "Resize":
-                        image = image.resize((336, 336))
+                        width=image.width
+                        height=image.height
+                        if height>width:
+                            image=image.resize((height, height),Image.ANTIALIAS)
+                        else: 
+                            image=image.resize((width, width),Image.ANTIALIAS)
+                        # image = image.resize((336, 336), Image.ANTIALIAS)
                     else:
                         raise ValueError(f"Invalid image_process_mode: {image_process_mode}")
                     max_hw, min_hw = max(image.size), min(image.size)
@@ -185,15 +192,18 @@ class Conversation:
                     image.save(buffered, format="JPEG")
                     img_b64_str = base64.b64encode(buffered.getvalue()).decode()
                     img_str = f'<img src="data:image/png;base64,{img_b64_str}" alt="user upload image" />'
-                    ret.append([img_str, None])
-                    msg = msg.replace('<image>', '').strip()
-                    if len(msg) > 0:
-                        ret.append([msg, None])
+                    msg = img_str + msg.replace('<image>', '').strip()
+                    # ret.append([img_str, None])
+                    # msg = msg.replace('<image>', '').strip()
+                    # if len(msg) > 0:
+                    #     ret.append([msg, None])
+                    ret.append([msg, None])
                 else:
                     ret.append([msg, None])
             else:
                 ret[-1][-1] = msg
         return ret
+
 
     def copy(self):
         return Conversation(
