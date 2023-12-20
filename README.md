@@ -90,7 +90,7 @@ pip install flash-attn --no-build-isolation
 
 <table>
   <tr>
-    <th align="left">Model</th>
+    <th align="left">MLLM Model</th>
     <th align="center">Pretrained Models</th>
   </tr>
   <tr>
@@ -104,6 +104,10 @@ pip install flash-attn --no-build-isolation
 </table>
 
 <table>
+  <tr>
+    <th align="left">SD Model</th>
+    <th align="center">Pretrained Models</th>
+  </tr>
   <tr>
     <td align="left">LLMGA-SD15-T2I</td>
     <td align="center"><a href="https://huggingface.co/binxia/llmga-sd15-t2i">Download</a></td>
