@@ -365,9 +365,9 @@ def build_demo(embed_mode):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model_path", type=str, default="/root/autodl-tmp/llmga-llama-2-7b-chat-full-finetune")
+    parser.add_argument("--model_path", type=str, default="./checkpoints/llmga-llama-2-7b-chat-full-finetune")
     parser.add_argument("--model_base", type=str, default=None)
-    parser.add_argument("--sdmodel_id", type=str, default="/root/autodl-tmp/llmga-sdxl-t2i")
+    parser.add_argument("--sdmodel_id", type=str, default="./checkpoints/llmga-sdxl-t2i")
     parser.add_argument("--port", type=int)
     parser.add_argument("--concurrency-count", type=int, default=10)
     parser.add_argument("--model-list-mode", type=str, default="once",
