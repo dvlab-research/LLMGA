@@ -17,7 +17,7 @@
 <a href='https://huggingface.co/binxia'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Data-green'></a>
 
 ## News
-- [x] [2023.12.20]   🔥 We release our training datasets.
+- [x] [2023.12.20]   🔥 We release LLMGA's [training datasets](https://huggingface.co/binxia/LLMGA-dataset).
 - [x] [2023.12.20]    We release the gradio codes of LLMGA7b-SDXL-T2I.
 - [x] [2023.12.08]   🔥 We release LLMGA7b-SDXL-T2I [demo](https://72379d10f6842705f3.gradio.live).
 - [x] [2023.11.30]   We have released the code for DiffRIR. It can effectively eliminate differences in brightness, contrast, and texture between generated and preserved regions in inpainting and outpainting. Considering its applicability to projects beyond LLMGA, we have open-sourced it at [Github](https://github.com/Zj-BinXia/DiffRIR).
