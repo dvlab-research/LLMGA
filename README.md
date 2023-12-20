@@ -207,7 +207,13 @@ python3 llmga.serve.gradio_web_server.py \
     --port 8334 \
 ```
 
-python -m llmga.serve.gradio_web_server --load-4bit --model-list-mode reload --port 8334
+<div align=center>
+<img width="100%" src="imgs/demo1.png"/>
+</div>
+
+<div align=center>
+<img width="100%" src="imgs/demo2.png"/>
+</div>
 
 ## TODO
 - [x] Support gradio demo.
