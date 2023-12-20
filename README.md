@@ -212,7 +212,7 @@ python3 llmga.serve.gradio_web_server.py \
 </div>
 
 <div align=center>
-<img width="95%" src="imgs/demo2.png"/>
+<img width="100%" src="imgs/demo2.png"/>
 </div>
 
 ## TODO
