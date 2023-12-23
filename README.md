@@ -152,6 +152,7 @@ The folder structure should be organized as follows before training.
 LLMGA
 ├── llmga
 ├── scripts
+├── work_dirs
 ├── checkpoints
 │   ├── Training
 │   ├── Inference
