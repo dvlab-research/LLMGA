@@ -50,19 +50,19 @@ class LoadImageFromLmdb(object):
 
 
 class Text2ImgTrainDataset(Dataset):
-    def __init__(self, indir,indir2, args=None):
-        indir_coco = os.path.join(indir2,"train.json")
-        image_folder2 = os.path.join(indir2,"train2017")
-        self.txn1 = LoadImageFromLmdb(os.path.join(indir, "lmdb_train-00000-of-00002"))
-        self.txn2 = LoadImageFromLmdb(os.path.join(indir, "lmdb_train-00001-of-00002"))
+    def __init__(self, indir, args=None):
+        indir_coco = os.path.join(indir,"LLMGA-dataset","coco2017_train.json")
+        image_folder2 = os.path.join(indir,"COCO","train2017")
+        self.txn1 = LoadImageFromLmdb(os.path.join(indir, "LAION-Aesthetic", "lmdb_train-00000-of-00002"))
+        self.txn2 = LoadImageFromLmdb(os.path.join(indir, "LAION-Aesthetic", "lmdb_train-00001-of-00002"))
 
-        with open(os.path.join(indir,"LLM-info","lmdb_train-00000-of-00002.json"), 'r', encoding='utf-8') as fr:
+        with open(os.path.join(indir,"LLMGA-dataset","LAION","lmdb_train-00000-of-00002.json"), 'r', encoding='utf-8') as fr:
             self.prompt_dict1 = json.load(fr)
         
-        with open(os.path.join(indir,"LLM-info","lmdb_train-00001-of-00002.json"), 'r', encoding='utf-8') as fr:
+        with open(os.path.join(indir,"LLMGA-dataset","LAION","lmdb_train-00001-of-00002.json"), 'r', encoding='utf-8') as fr:
             self.prompt_dict2 = json.load(fr)
 
-        with open(os.path.join(indir,"laion_3m_prompt.json"), 'r', encoding='utf-8') as fr:
+        with open(os.path.join(indir,"LLMGA-dataset","LAION","laion_3m_prompt.json"), 'r', encoding='utf-8') as fr:
             self.prompt_dict_ori = json.load(fr)
 
         self.prompt_coco_dict = json.load(open(indir_coco,"r"))

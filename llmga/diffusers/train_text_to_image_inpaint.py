@@ -256,16 +256,6 @@ def parse_args():
         ),
     )
     parser.add_argument(
-        "--train_data_dir2",
-        type=str,
-        default=None,
-        help=(
-            "A folder containing the training data. Folder contents must follow the structure described in"
-            " https://huggingface.co/docs/datasets/image_dataset#imagefolder. In particular, a `metadata.jsonl` file"
-            " must exist to provide the captions for the images. Ignored if `dataset_name` is specified."
-        ),
-    )
-    parser.add_argument(
         "--image_column", type=str, default="image", help="The column of the dataset containing an image."
     )
     parser.add_argument(
@@ -702,7 +692,7 @@ def main():
         eps=args.adam_epsilon,
     )
 
-    train_dataset = InpaintingTextTrainDataset(args.train_data_dir,args.train_data_dir2,args)
+    train_dataset = InpaintingTextTrainDataset(args.train_data_dir,args)
 
 
     with accelerator.main_process_first():

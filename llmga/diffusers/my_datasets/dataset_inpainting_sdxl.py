@@ -322,16 +322,16 @@ class LoadImageFromLmdb(object):
 
 class InpaintingTextTrainDataset(Dataset):
     def __init__(self, indir, args=None,mask_gen_kwargs=None):
-        self.txn1 = LoadImageFromLmdb(os.path.join(indir, "lmdb_train-00000-of-00002"))
-        self.txn2 = LoadImageFromLmdb(os.path.join(indir, "lmdb_train-00001-of-00002"))
+        self.txn1 = LoadImageFromLmdb(os.path.join(indir, "LAION-Aesthetic", "lmdb_train-00000-of-00002"))
+        self.txn2 = LoadImageFromLmdb(os.path.join(indir, "LAION-Aesthetic", "lmdb_train-00001-of-00002"))
 
-        with open(os.path.join(indir,"LLM-info","lmdb_train-00000-of-00002.json"), 'r', encoding='utf-8') as fr:
+        with open(os.path.join(indir,"LLMGA-dataset","LAION","lmdb_train-00000-of-00002.json"), 'r', encoding='utf-8') as fr:
             self.prompt_dict1 = json.load(fr)
         
-        with open(os.path.join(indir,"LLM-info","lmdb_train-00001-of-00002.json"), 'r', encoding='utf-8') as fr:
+        with open(os.path.join(indir,"LLMGA-dataset","LAION","lmdb_train-00001-of-00002.json"), 'r', encoding='utf-8') as fr:
             self.prompt_dict2 = json.load(fr)
 
-        with open(os.path.join(indir,"laion_3m_prompt.json"), 'r', encoding='utf-8') as fr:
+        with open(os.path.join(indir,"LLMGA-dataset","LAION","laion_3m_prompt.json"), 'r', encoding='utf-8') as fr:
             self.prompt_dict_ori = json.load(fr)
         
         self.args = args
