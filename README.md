@@ -88,6 +88,24 @@ pip install flash-attn --no-build-isolation
 </div>
 
 
+
+## Preparation
+
+### Training Dataset
+We provide the processed image-based data for LLMGA training. We organize the data in the format of LLaVA, please organize the training image-based data following [this](https://github.com/haotian-liu/LLaVA/blob/main/docs/Data.md).
+
+please download [Laion-aesthetic dataset](https://huggingface.co/datasets/ChristophSchuhmann/improved_aesthetics_6.25plus), [COCO2017 dataset](http://images.cocodataset.org/zips/train2017.zip), and [LLMGA dataset](https://huggingface.co/binxia/LLMGA-dataset) and organize them as in [Structure](#structure).
+
+
+### Training Pretrained Weights
+We recommend users to download the pretrained weights from the following [link](https://ai.meta.com/llama/), and put them in `checkpoints` following [Structure](#structure).
+
+
+### Inference Pretrained Weights
+
+Please download MLLM Models and SD models from the following links. For example, you can download [LLMGA-MLLM7b](https://huggingface.co/binxia/llmga-llama-2-7b-chat-full-finetune) and [LLMGA-SDXL-T2I](https://huggingface.co/binxia/llmga-sdxl-t2i) to realize LLMGA7b-T2I functionality. Please organize them as in [Structure](#structure).
+
+
 <table>
   <tr>
     <th align="left">MLLM Model</th>
@@ -125,20 +143,6 @@ pip install flash-attn --no-build-isolation
     <td align="center"><a href="https://huggingface.co/binxia/llmga-sdxl-inpainting">Download</a></td>
   </tr>
 </table>
-
-
-## Preparation
-
-### Training Dataset
-We provide the processed image-based data for LLMGA training. We organize the data in the format of LLaVA, please organize the training image-based data following [this](https://github.com/haotian-liu/LLaVA/blob/main/docs/Data.md).
-
-please download [Laion-aesthetic dataset](https://huggingface.co/datasets/ChristophSchuhmann/improved_aesthetics_6.25plus), [COCO2017 dataset](http://images.cocodataset.org/zips/train2017.zip), and [LLMGA dataset](https://huggingface.co/binxia/LLMGA-dataset) and organize them as in [Structure](#structure).
-
-For meta info, please organize them as in [Structure](#structure).
-
-### Training Pretrained Weights
-We recommend users to download the pretrained weights from the following [link](https://ai.meta.com/llama/), and put them in `checkpoints` following [Structure](#structure).
-
 
 ### Structure
 
