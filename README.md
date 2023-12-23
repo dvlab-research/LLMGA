@@ -36,7 +36,7 @@
 - [Demo](#demo)
 - [Install](#install)
 - [Model](#model)
-- [Preparation](#preparation)
+- [Preparation](#Preparation)
 - [Train](#train)
 - [Inference](#inference)
 - [TODO](#todo)
@@ -129,13 +129,48 @@ pip install flash-attn --no-build-isolation
 
 ## Preparation
 
+### Training Dataset
+We provide the processed image-based data for LLMGA training. We organize the data in the format of LLaVA, please organize the training image-based data following [this](https://github.com/haotian-liu/LLaVA/blob/main/docs/Data.md).
+
+please download [Laion-aesthetic dataset](https://huggingface.co/datasets/ChristophSchuhmann/improved_aesthetics_6.25plus), [COCO2017 dataset](http://images.cocodataset.org/zips/train2017.zip), and [LLMGA dataset](https://huggingface.co/binxia/LLMGA-dataset) and organize them as in [Structure](#structure).
+
+For meta info, please organize them as in [Structure](#structure).
+
+### Training Pretrained Weights
+We recommend users to download the pretrained weights from the following [link](https://ai.meta.com/llama/), and put them in `checkpoints` following [Structure](#structure).
+
+
+### Structure
+
+The folder structure should be organized as follows before training.
+
+```
+LLMGA
+├── llmga
+├── scripts
+├── checkpoints
+│   ├── Training
+│   ├── Inference
+│   │   ├── llmga-llama-2-7b-chat-full-finetune
+│   │   ├── llmga-llama-2-13b-chat-full-finetune
+│   │   ├── llmga-sdxl-t2i
+│   │   ├── llmga-sdxl-inpainting
+│   │   ├── llmga-sd15-t2i
+│   │   ├── llmga-sd15-inpainting
+├── data
+│   │── LLMGA-dataset
+│   │── LAION-Aesthetic
+│   ├── COCO
+
+```
+
 
 
 ## Train
 
 LLMGA is trained on 8 A100 GPUs with 80GB memory. To train on fewer GPUs, you can reduce the `per_device_train_batch_size` and increase the `gradient_accumulation_steps` accordingly. Always keep the global batch size the same: `per_device_train_batch_size` x `gradient_accumulation_steps` x `num_gpus`.
 
-Please make sure you download and organize the data following [Preparation](#preparation) before training.
+Please make sure you download and organize the data following [Preparation](#Preparation) before training.
 
 ### First Stage Training
 
