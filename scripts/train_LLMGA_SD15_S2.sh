@@ -1,8 +1,7 @@
 export MODEL_NAME="runwayml/stable-diffusion-v1-5"
 accelerate launch --main_process_port 1234 --mixed_precision "bf16" --multi_gpu  llmga/diffusers/train_text_to_image.py \
   --pretrained_model_name_or_path=$MODEL_NAME \
-  --train_data_dir="./data/LLMGA-dataset/LAION" \
-  --train_data_dir2="./data/LLMGA-dataset/coco2017_train.json" \
+  --train_data_dir="./data" \
   --use_ema \
   --allow_tf32 \
   --resolution=512 --center_crop --random_flip \
