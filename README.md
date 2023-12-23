@@ -166,6 +166,7 @@ LLMGA
 │   │── LLMGA-dataset
 │   │── LAION-Aesthetic
 │   ├── COCO
+│   │   ├── train2017
 
 ```
 
