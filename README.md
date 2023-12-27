@@ -98,7 +98,22 @@ please download [Laion-aesthetic dataset](https://huggingface.co/datasets/Christ
 
 
 ### Training Pretrained Weights
-We recommend users to download the pretrained weights from the following [link](https://ai.meta.com/llama/), and put them in `checkpoints` following [Structure](#structure).
+We recommend users to download the pretrained [MLLM-7b weights](https://huggingface.co/binxia/llmga-llama-2-7b-pretrain) or [MLLM-13b weights](https://huggingface.co/binxia/llmga-llama-2-13b-pretrain), which use the training scheme similar to LLaVa.  Then put them in `checkpoints/Training` following [Structure](#structure).
+
+<table>
+  <tr>
+    <th align="left">MLLM pretrained Model</th>
+    <th align="center">Pretrained Models</th>
+  </tr>
+  <tr>
+    <td align="left">MLLM7b</td>
+    <td align="center"><a href="https://huggingface.co/binxia/llmga-llama-2-7b-pretrain">Download</a></td>
+  </tr>
+  <tr>
+    <td align="left">MLLM13b</td>
+    <td align="center"><a href="https://huggingface.co/binxia/llmga-llama-2-13b-pretrain">Download</a></td>
+  </tr>
+</table>
 
 
 ### Inference Pretrained Weights
@@ -155,6 +170,8 @@ LLMGA
 ├── work_dirs
 ├── checkpoints
 │   ├── Training
+│   │   ├── llmga-llama-2-7b-pretrain
+│   │   ├── llmga-llama-2-13b-pretrain
 │   ├── Inference
 │   │   ├── llmga-llama-2-7b-chat-full-finetune
 │   │   ├── llmga-llama-2-13b-chat-full-finetune
