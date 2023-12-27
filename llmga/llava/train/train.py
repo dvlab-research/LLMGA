@@ -702,7 +702,7 @@ class LazySupervisedDataset(Dataset):
         self.len_aes_2 = len(self.list_aes_2_dict)
         self.txn1 = LoadImageFromLmdb(os.path.join(self.data_args.image_folder2, "lmdb_train-00000-of-00002"))
         self.txn2 = LoadImageFromLmdb(os.path.join(self.data_args.image_folder2, "lmdb_train-00001-of-00002"))
-        self.len_aes = self.len_aes1 + self.len_aes2
+        self.len_aes = self.len_aes_1 + self.len_aes_2
         self.ratio_aes = self.len_aes / (self.len_coco + self.len_aes)
 
         self.gen_mask = get_mask_generator()
