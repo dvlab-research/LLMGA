@@ -706,7 +706,7 @@ class LazySupervisedDataset(Dataset):
         self.ratio_aes = self.len_aes / (self.len_coco + self.len_aes)
 
         self.gen_mask = get_mask_generator()
-        self.len1 = int(0.5 * self.len1)
+        self.len1 = int(1 * self.len1)
         self.len2 = int(1 * self.len1)
         self.len3 = int(1 * self.len1)
         self.len4 = int(1 * self.len1)
