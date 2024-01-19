@@ -20,6 +20,7 @@ from llmga.llava.mm_utils import tokenizer_image_token, get_model_name_from_path
 import hashlib
 import torch
 from llmga.diffusers.pipeline_stable_diffusion_xl_lpw import StableDiffusionXLPipeline
+from diffusers import DiffusionPipeline
 import copy
 
 
@@ -389,9 +390,14 @@ if __name__ == "__main__":
     model_name = get_model_name_from_path(args.model_path)
     tokenizer, model, image_processor, context_len = load_pretrained_model(args.model_path, args.model_base, model_name, args.load_8bit, args.load_4bit)
 
-    pipe = StableDiffusionXLPipeline.from_pretrained(
-        args.sdmodel_id,variant="fp16", use_safetensors=True,add_watermarker=False
-    )
+    if "sd15" in args.sdmodel_id:
+      pipe = DiffusionPipeline.from_pretrained(
+        args.sdmodel_id, custom_pipeline="lpw_stable_diffusion",torch_dtype=torch.float16, use_safetensors=True
+      )
+    else:
+      pipe = StableDiffusionXLPipeline.from_pretrained(
+          args.sdmodel_id,variant="fp16", use_safetensors=True,add_watermarker=False
+      )
     device = model.device
     pipe = pipe.to(device)
 
