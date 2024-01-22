@@ -238,8 +238,8 @@ Please try this for inference:
 test LLMGA7b-SDXL for T2I with image input at first. You can ask LLMGA to assist in **T2I** generation around your input image.
 ```bash
 python3 -m llmga.serve.cli-sdxl \
-    --model-path ./checkpoints/Inference/llmga-llama-2-7b-chat-full-finetune  \
-    --sdmodel_id ./checkpoints/Inference/llmga-sdxl-t2i \
+    --model-path binxia/llmga-llama-2-7b-chat-full-finetune  \
+    --sdmodel_id binxia/llmga-sdxl-t2i \
     --save_path ./res/t2i/llmga7b-sdxl \
     --image-file /PATHtoIMG
 ```
@@ -247,8 +247,8 @@ python3 -m llmga.serve.cli-sdxl \
 test LLMGA7b-SDXL for Inpainting with image input at first. You can ask LLMGA to assist in **inpainting or outpainting** around your input image.
 ```bash
 python3 -m llmga.serve.cli-sdxl-inpainting \
-    --model-path ./checkpoints/Inference/llmga-llama-2-7b-chat-full-finetune  \
-    --sdmodel_id ./checkpoints/Inference/llmga-sdxl-inpainting \
+    --model-path binxia/llmga-llama-2-7b-chat-full-finetune  \
+    --sdmodel_id binxia/llmga-sdxl-inpainting \
     --save_path ./res/inpainting/llmga7b-sdxl \
     --image-file /PATHtoIMG \
     --mask-file /PATHtomask
@@ -257,16 +257,16 @@ python3 -m llmga.serve.cli-sdxl-inpainting \
 test LLMGA7b-SDXL for T2I generation without image input at first. You can ask LLMGA to assist in **T2I** generation by only chatting.
 ```bash
 python3 -m llmga.serve.cli2-sdxl \
-    --model-path ./checkpoints/Inference/llmga-llama-2-7b-chat-full-finetune  \
-    --sdmodel_id ./checkpoints/Inference/llmga-sdxl-t2i \
+    --model-path binxia/llmga-llama-2-7b-chat-full-finetune  \
+    --sdmodel_id binxia/llmga-sdxl-t2i \
     --save_path ./res/t2i/llmga7b-sdxl \
 ```
 
 ### Gradio Inference
 ```bash
 python3 llmga.serve.gradio_web_server.py \
-    --model-path ./checkpoints/llmga-llama-2-7b-chat-full-finetune  \
-    --sdmodel_id ./checkpoints/llmga-sdxl-t2i \
+    --model-path binxia/llmga-llama-2-7b-chat-full-finetune  \
+    --sdmodel_id binxia/llmga-sdxl-inpainting \
     --load-4bit \
     --model-list-mode reload \
     --port 8334 \
