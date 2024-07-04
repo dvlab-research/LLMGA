@@ -17,6 +17,7 @@
 <a href='https://huggingface.co/binxia/LLMGA-dataset'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Data-green'></a>
 
 ## News
+**Old Version:**
 - [x] [2023.12.20]   🔥 We release LLMGA's [training datasets](https://huggingface.co/binxia/LLMGA-dataset).
 - [x] [2023.12.20]    We release the gradio codes of LLMGA7b-SDXL-T2I.
 - [x] [2023.12.08]   🔥 We release LLMGA7b-SDXL-T2I [demo](https://72379d10f6842705f3.gradio.live).
