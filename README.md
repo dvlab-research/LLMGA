@@ -6,7 +6,7 @@
 </p>
 
 
-# LLMGA: Multimodal Large Language Model based Generation Assistant
+# LLMGA: Multimodal Large Language Model-based Generation Assistant (ECCV2024)
 
 [Bin Xia](https://scholar.google.com/citations?user=rh2fID8AAAAJ&hl=zh-CN), [Shiyin Wang](), [Yingfan Tao](https://scholar.google.com/citations?user=GYDnPdQAAAAJ&hl=zh-CN&oi=ao), [Yitong Wang](https://scholar.google.com/citations?user=NfFTKfYAAAAJ&hl=zh-CN), and [Jiaya Jia](https://scholar.google.com/citations?user=XPAkzTEAAAAJ&hl=zh-CN&oi=ao)
 
@@ -17,6 +17,8 @@
 <a href='https://huggingface.co/binxia/LLMGA-dataset'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Data-green'></a>
 
 ## News
+**New Version (Accepted by ECCV2024):**
+- [x] [2024.07.04] xxxxx
 **Old Version:**
 - [x] [2023.12.20]   🔥 We release LLMGA's [training datasets](https://huggingface.co/binxia/LLMGA-dataset).
 - [x] [2023.12.20]    We release the gradio codes of LLMGA7b-SDXL-T2I.
