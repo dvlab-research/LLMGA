@@ -18,7 +18,7 @@
 
 ## News
 **New Version (Accepted by ECCV2024):**
-- [x] [2024.07.04] I am organizing and uploading the new version of the LLMGA code and the dataset and model. I will have a status update when I complete this process, please wait. In this new version, we build our LLMGA on different base LLM models, such as **Llama2 7b**, **Mistral 7b**, **LLama3 8b**, **Qwen2 0.5b**, **Qwen2 1.5b**, **Qwen2 7b**, **Phi3 3b**, and **gemma 2b**. They have different performance and model sizes, as well as commercial licenses, there is always one that can meet your usage scenario.
+- [x] [2024.07.04] I am organizing and uploading the new version of the LLMGA code and the dataset and model. I will have a status update when I complete this process, please wait for me for a few days. Notably, in this new version, we build our LLMGA on different base LLM models, such as **Llama2 7b**, **Mistral 7b**, **LLama3 8b**, **Qwen2 0.5b**, **Qwen2 1.5b**, **Qwen2 7b**, **Phi3 3b**, and **gemma 2b**. They have different performance and model sizes, as well as commercial licenses, there is always one that can meet your usage scenario.
       
 **Old Version:**
 - [x] [2023.12.20]   🔥 We release LLMGA's [training datasets](https://huggingface.co/binxia/LLMGA-dataset).
