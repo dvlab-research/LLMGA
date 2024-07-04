@@ -19,6 +19,7 @@
 ## News
 **New Version (Accepted by ECCV2024):**
 - [x] [2024.07.04] xxxxx
+      
 **Old Version:**
 - [x] [2023.12.20]   🔥 We release LLMGA's [training datasets](https://huggingface.co/binxia/LLMGA-dataset).
 - [x] [2023.12.20]    We release the gradio codes of LLMGA7b-SDXL-T2I.
