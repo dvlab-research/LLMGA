@@ -1,0 +1,6 @@
+transformers==4.37.2
+sentencepiece
+accelerate
+bitsandbytes
+pydantic
+lmdb
