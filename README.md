@@ -6,7 +6,7 @@
 </p>
 
 
-# LLMGA: Multimodal Large Language Model-based Generation Assistant (ECCV2024)
+# LLMGA: Multimodal Large Language Model-based Generation Assistant (ECCV2024  Oral)
 
 [Bin Xia](https://scholar.google.com/citations?user=rh2fID8AAAAJ&hl=zh-CN), [Shiyin Wang](), [Yingfan Tao](https://scholar.google.com/citations?user=GYDnPdQAAAAJ&hl=zh-CN&oi=ao), [Yitong Wang](https://scholar.google.com/citations?user=NfFTKfYAAAAJ&hl=zh-CN), and [Jiaya Jia](https://scholar.google.com/citations?user=XPAkzTEAAAAJ&hl=zh-CN&oi=ao)
 
