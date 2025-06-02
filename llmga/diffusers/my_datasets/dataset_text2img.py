@@ -51,23 +51,10 @@ class LoadImageFromLmdb(object):
 
 class Text2ImgTrainDataset(Dataset):
     def __init__(self, indir, args=None):
-        indir_coco = os.path.join(indir,"LLMGA-dataset","coco2017_train.json")
-        image_folder2 = os.path.join(indir,"COCO","train2017")
-        self.txn1 = LoadImageFromLmdb(os.path.join(indir, "LAION-Aesthetic", "lmdb_train-00000-of-00002"))
-        self.txn2 = LoadImageFromLmdb(os.path.join(indir, "LAION-Aesthetic", "lmdb_train-00001-of-00002"))
-
-        with open(os.path.join(indir,"LLMGA-dataset","LAION","lmdb_train-00000-of-00002.json"), 'r', encoding='utf-8') as fr:
-            self.prompt_dict1 = json.load(fr)
+        json_path = "./data/jsons/llmga-data/T2I/train.json"
+        self.prompt_dict = json.load(open(json_path,"r"))
         
-        with open(os.path.join(indir,"LLMGA-dataset","LAION","lmdb_train-00001-of-00002.json"), 'r', encoding='utf-8') as fr:
-            self.prompt_dict2 = json.load(fr)
-
-        with open(os.path.join(indir,"LLMGA-dataset","LAION","laion_3m_prompt.json"), 'r', encoding='utf-8') as fr:
-            self.prompt_dict_ori = json.load(fr)
-
-        self.prompt_coco_dict = json.load(open(indir_coco,"r"))
-        
-        self.image_folder2 = image_folder2
+        self.image_folder = "./data/imgs"
         
         self.train_transforms = transforms.Compose(
         [
@@ -79,37 +66,15 @@ class Text2ImgTrainDataset(Dataset):
         ]
     )
 
-        self.len_1=len(self.prompt_dict1)
-        self.len_2=len(self.prompt_dict2)
-        self.len_3=len(self.prompt_coco_dict)
+        self.len=len(self.prompt_dict)
 
     def __len__(self):
-        return self.len_1+self.len_2+ self.len_3 
+        return self.len
     
     def __getitem__(self, index):
-        if index<self.len_1+self.len_2:
-            if index < self.len_1:
-                txn = self.txn1
-                keys = self.prompt_dict1
-            else: 
-                txn = self.txn2
-                keys = self.prompt_dict2
-                index = index - self.len_1
-            key = keys[index]["image"]
-            img = txn(key)
-            if random.random()<0.05:
-                prompt=self.prompt_dict_ori[key]
-            else:
-                prompt = keys[index]["conversations"][1]["value"]
-            
-        else:
-            info_json =  self.prompt_coco_dict[index-self.len_1-self.len_2]
-            img=Image.open(os.path.join(self.image_folder2,"%012d.jpg"%(info_json["image_id"]))).convert("RGB")
-            if random.random()<0.05:
-                prompt=info_json["coco_caption"]
-            else:
-                prompt = info_json["caption"]
-
+        prompt = self.prompt_dict[index]["caption"]
+        image_path=os.path.join(self.image_folder,self.prompt_dict[index]["image"])
+        img=Image.open(image_path)
         img=self.train_transforms(img)
 
         res = {
